@@ -242,7 +242,7 @@ def objective(trial):
     
     train = []
     for i in range(10,11):
-        df = pd.read_csv(f'C:/Users/haydc/OneDrive - University of Strathclyde/Year4/19496/Dataset (1)/Multiclass/TestDataZero/All_new{i}.csv')
+        df = pd.read_csv(f'Filename/TestDataZero/All_new{i}.csv')
         df.fillna(0, inplace=True)
         df.replace({True: 1, False: 0}, inplace=True)  
         df.drop_duplicates(ignore_index=True, inplace=True)
